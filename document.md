@@ -9,6 +9,17 @@
 
  * Even only one line of HTML code changes, browser has to make a request for entire page.
 
+### Pros
+ * Initial page load is faster.
+ * Great for non-interactable static websites.
+ * High search engine optimization.
+
+### Cons
+ * Many server requests.
+ * Making page interactable is slow.
+ * On any difference on page done by the user, whole page needs to be requested again from server.
+ * Interactions are limited.
+
 <img title="Server-Side Rendering" src="./ssr.png">
 
 #
@@ -16,5 +27,15 @@
  * With client-side rendering, we are rendering the content in the browser with the help of client-side scripting languages like JavaScript. 
   
  * So the server delivers bare HTML document with JavaScript file (or with any other server-side scripting language) and allows the browser to render the website.
+
+### Pros
+* Interactions are rich.
+* Making page interactable is fast.
+* Page can be updated without any server request.
+* Great for web applications.
+
+### Cons
+* Initial load requires more time.
+* Low search engine optimization if not implemented correctly.
 
 <img title="Server-Side Rendering" src="./csr.png">
